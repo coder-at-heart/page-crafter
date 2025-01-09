@@ -1,0 +1,117 @@
+@use "resources/scss/web/theme" as *;
+
+
+.pagecraft {
+  label {
+    font-size: 80%;
+    font-weight: normal;
+    margin-bottom: 2px;
+    margin-top: 5px;
+  }
+}
+
+.pagecraft-component {
+
+  background-color: transparentize(theme('colors.primary'), 0.95);
+  border: 1px solid transparentize(theme('colors.primary'), 0.65);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+  &__text {
+    margin: 0;
+
+    .editor {
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      padding: 10px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+
+      &:focus-within {
+        outline: none;
+        border-color: #0b0e0f;
+        box-shadow: 0 0 5px rgba(3, 3, 14, 0.5);
+      }
+
+      *:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__button {
+    label {
+      margin: 0;
+      font-weight: normal;
+    }
+  }
+
+
+  .error {
+    font-size: 80%;
+    color: theme('colors.danger');
+    font-weight: normal;
+    margin-top: 2px;
+  }
+}
+
+.styled-table {
+  border: solid 1px #000;
+  box-shadow: 0.01rem 0.01rem #000;
+
+  td {
+    padding: 10px 50px 0px 10px;
+
+  }
+
+  td:first-child {
+    font-weight: bold;
+  }
+
+  td:last-child {
+    padding-right: 200px;
+  }
+
+  tr:last-child td {
+    padding-bottom: 20px;
+
+  }
+}
+
+.video-input {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+
+  &:focus-within {
+    outline: none;
+    border-color: #0b0e0f;
+    box-shadow: 0 0 5px rgba(3, 3, 14, 0.5);
+  }
+
+  *:focus {
+    outline: none;
+  }
+}
+
+.title-input {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.w-5 {
+  width: 5rem;
+}
+
+.w-10 {
+  width: 10rem;
+}
+
+
+.del {
+  background-color: white;
+  color: black;
+  line-height: 1.5rem;
+
+}
